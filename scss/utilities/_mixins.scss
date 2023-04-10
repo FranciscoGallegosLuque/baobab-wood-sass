@@ -1,0 +1,46 @@
+@mixin main-section-mixin($background-image) {
+    display: grid;
+    height: 287px;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    background-image: url($background-image);
+    background-size: cover;
+    background-position: center center;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    padding: 0px;
+    @include tablet{
+        height: 500px;
+    }
+    @include desktop{
+        height: 95vh;
+    }
+    h1{
+        color: white;
+        font-weight: 600;
+        font-size: 2rem;
+        grid-row: 4/5;
+        grid-column: 2/3;
+        align-self: end;
+        @include tablet{
+            font-size: 3rem;
+        }
+        @include desktop{
+            font-size: 4.4rem;
+        }
+    }
+    a{
+        grid-row: 5/6;
+        grid-column: 2/3;    
+    }
+    img{
+        height: 15px;
+        @include tablet{
+            height: 25px;
+        }
+        @include desktop{
+            height: 30px;
+        }
+    }
+}

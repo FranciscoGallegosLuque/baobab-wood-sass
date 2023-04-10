@@ -1,0 +1,112 @@
+.contacto{
+    .contacto-main-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 510px;
+        .contacto-presentacion{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            gap: 30px;
+            width: 260px;
+            background-image: url(../assets/img/fondo-contacto.png);
+            background-size: cover;
+            .texto-container{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                font-size: 1.5rem;
+                p{
+                    width: 80%;
+                }
+            }
+            .form{
+                width: 260px;
+                .form__fieldset{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 15px;
+                    border: none;
+                    height: 250px;
+                    .form__input{
+                        height: 32px;
+                        width: 100%;
+                        border: none;
+                        border-radius: 5px;
+                        padding: 5px;
+                        background-color: #F1F1F1;
+                    }
+                    .form__input--textarea{
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    .contacto-container{
+        height: 487px;
+        background-color: #F1F1F1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        .cards-container{
+            display: grid;
+            width: 260px;
+            height: 400px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            align-items: center;
+            justify-content: center;
+            .contacto-card{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                align-self: center;
+                justify-self: center;
+                width: 115px;
+                height: 115px;
+                background-color: white;
+                border-radius: 10px;
+                .card-text-container{
+                    width: 80%;
+                    overflow-wrap: break-word;
+                    h2{
+                        font-size: 1rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    .contacto-ubicacion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 450px;
+        .ubicacion-text-container{
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: space-evenly;
+            height: 350px;
+            h2{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+            img{
+                height: 176px;
+                width: 265px;
+            }
+        }
+    }
+}

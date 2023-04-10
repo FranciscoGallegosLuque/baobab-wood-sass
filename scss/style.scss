@@ -1,6 +1,12 @@
+@import "utilities/_mixins.scss";
+@import "utilities/variables";
 @import "base/_media-queries";
-@import "base/_typo";
+@import "base/_typo.scss";
 @import "base/_reset.scss";
 @import "layout/_header.scss";
-@import "layout/main-index";
+@import "layout/main-index.scss";
+@import "layout/main-nosotros.scss";
+@import "layout/main-galeria.scss";
+@import "layout/main-testimonios.scss";
+@import "layout/main-contacto.scss";
 @import "layout/_footer.scss";  
