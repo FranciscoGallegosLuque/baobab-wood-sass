@@ -1,0 +1,1311 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins&family=Roboto:wght@100;500&display=swap');
+  /* colores
+    #98804B
+    rgb (152,128,75,0.53)
+    #EAEAEA
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+
+/*reseteo*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* font resizing */
+html{
+    font-size: 62.5%;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.bg{
+    background-color: rgba(167, 140, 83, 0.891);
+
+}
+
+/* .navbar{
+    padding: 0px;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+} */
+
+
+
+/* header */
+ .glass-header{
+    backdrop-filter: blur(20px);
+    background-color: rgba(167, 140, 83, 0.891);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.css-navbar{
+    display: flex;
+    height: 48px;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+
+
+
+
+
+/* header*/
+.css-header .css-header__logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.css-header .css-header__logo{
+    height: 30px;
+
+}
+
+.css-header__menu{
+    margin: 15px;
+}
+
+.css-navbar .header-container{
+    display: none;
+}
+
+
+
+
+/*media queries: header*/
+@media (min-width:768px){
+    .css-header__menu{
+        display: none;
+    }
+    
+    .css-header{
+        display: flex;
+        justify-content: center;
+    }
+
+    .css-navbar{
+        width: 1024px;
+    }
+    .css-navbar .header-container{
+        display: flex;
+        justify-content: right;
+        width: 500px;
+    }
+
+    .css-navbar .css-list{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .css-list__item{
+        font-size: 1.4rem;
+        margin-right: 20px;
+    }
+} 
+
+
+
+/*banner HOME*/
+ .main-section {
+    display: grid;
+    height: 287px;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    background-image: url("../assets/img/maceta.png");
+    background-size: cover;
+    background-position: center center;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    padding: 0px;
+}
+
+
+
+.main-section__heading{
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+.main-section__link{
+    grid-row: 5/6;
+    grid-column: 2/3;
+}
+
+
+
+@media screen and (min-width: 576px){
+    /*banner mobile*/
+    .main-section{
+        height: 500px;
+    }
+    .main-section__heading{
+        font-size: 3rem;
+    }
+
+@media screen and (min-width:1024px) {
+    /*banner desktop*/
+    .main-section{
+        height: 100vh;
+    }
+    .main-section__heading{
+        font-size: 4.4rem;
+    }
+}
+
+}
+
+
+
+/*section nosotros*/
+.nosotros-section{
+    display: flex;
+    height: 500px;
+    background-color: #EBE8E8;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nosotros-section__h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 80%;
+    
+}
+
+.nosotros-section__h3{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.card__ebanista{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nosotros-section__img{
+    height: 117px;
+}
+
+.desc-ebanista{
+    display: flex;
+    height: 110px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 60%;
+}
+
+.desc-ebanista__firma span{
+    font-weight: 600;
+}
+
+.desc-ebanista__link{
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+
+
+
+
+/*media queries nosotros section */
+@media screen and (min-width:576px) {
+    .nosotros-section__h2{
+        font-size: 3rem;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .nosotros-section__h3{
+        font-size: 2rem;
+    }
+
+    .card__ebanista{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        width:500px;
+        font-size: 1.5rem;
+    }
+    .nosotros-section__img{
+        height: 197px;
+    }
+    .desc-ebanista{
+        gap: 15px;
+    }
+
+    .desc-ebanista__link{
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+}
+
+
+
+.home .galeria-section{
+    display: flex;
+    align-items: center ;
+    height: 244px;
+    background-image: url("../assets/img/mesa-ratona-lateral.jpeg");
+    background-size: cover;
+}
+
+.galeria-section__link{
+    color: white  ;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 16px;
+}
+
+
+
+/*media queries galeria section*/
+@media screen and (min-width: 576px) {
+    .galeria-section{
+        height: 542px;
+    }
+    
+    .galeria-section__link{
+        font-size: 2rem;
+        margin: 35px
+    }
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+    .home .galeria-section{
+        height: 600px;
+    }
+}
+
+
+
+.testimonios-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 359px;
+    align-items: center;
+    background-color: #EBE8E8
+}
+
+.cards-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.card-container{
+    display: flex;
+    gap: 15px;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container--2{
+    display: none;
+}
+
+.card-container--3{
+    display: none;
+}
+
+
+ .testimonios-card{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    align-items: center;
+    justify-items: center;
+    height: 205px;
+    width: 169px;
+    border-radius: 24px;
+    box-shadow: 2px 2px 5px lightgray;
+    background-color: white;
+    padding: 15px;
+} 
+
+.testimonios-card__texto{
+    grid-row: 2/3;
+}   
+
+.testimonios-card__link{
+    grid-row: 3/4;
+    color: black;
+    justify-self: right;
+}
+
+.testimonios-card__firma{
+    grid-row: 4/5;
+    font-size: 12px;
+    font-weight: 700;
+    justify-self: end;
+}
+
+.testimonios-section__link{
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+
+/*mq mobile testimonios section*/
+@media screen and (min-width:576px) {
+    .testimonios-section{
+        height: 522px;
+    }
+
+    .testimonios-card{
+        height: 279px;
+        width: 230px;
+    }
+
+    .testimonios-card p, 
+    .testimonios-card a, 
+    .testimonios-card h3{
+        font-size: 1.5rem;
+    }
+
+    .cards-container{
+        width: 550px;
+    }
+    .card-container--2{
+        display: flex;
+        gap: 15px;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-container__flechader{
+        display: none;
+    }
+
+}
+    
+    /*mq desktop testimonios section*/
+@media screen and (min-width:1200px){
+    .testimonios-section{
+        height: 650px;
+    }
+    
+    .cards-container{
+        width: 1150px;
+    }
+    .testimonios-card{
+        height: 406px;
+        width: 335px;
+        padding: 30px;
+    }
+
+    .testimonios-card p, 
+    .testimonios-card a, 
+    .testimonios-card h3{
+        font-size: 1.5rem;
+    }
+
+    .card-container--3{
+        display: flex;
+        gap: 15px;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .card-container--2__flechader{
+        display: none;
+    }
+
+    .testimonios-section__link{
+        font-size: 2rem;
+    }
+}
+    
+
+
+
+
+.contacto-section {
+    display: flex;
+    height: 534px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #bfb1958a;
+}
+
+.heading-container{
+    margin: 10px;
+    width: 80%;
+}
+
+.heading-container__h3{
+    font-size: 1.5rem;
+    font-weight: 600;   
+}
+
+.form{
+    width: 80%;
+}
+
+.form__fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    border: none;
+    height: 250px;
+}
+
+.form__input{
+    height: 32px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.form__input--textarea{
+    height: auto;
+}
+.data-container{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px;
+
+    
+}
+
+.data {
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+}
+
+.data__text{
+    width: 100%;
+}
+
+.data__img{
+    width: 20px;
+}
+
+.data__img--size{
+    height: 26px;
+
+}
+
+.contacto-section hr{
+    border-top: 1px solid black;
+    border-bottom: none;
+    margin: 2px;
+}
+
+
+
+
+/*mq tablet contacto section*/
+@media screen and (min-width:576px) {
+    .heading-container__h3{
+        font-size: 2rem;
+        font-weight: 600;   
+    }
+    .form__input{
+        font-size: 1.5rem;
+    }
+    .data{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .contacto-section{
+        display: grid;
+        grid-template-columns: 100px repeat(4,1fr) 100px;
+        grid-template-rows: 20px repeat(6,1fr) 20px;
+        height: 500px;
+    }
+
+    .form{
+        grid-column: 2/4;
+        grid-row: 2/8;
+        align-self: center;
+        justify-self: center;
+    }
+     
+    .form__fieldset{
+        gap: 20px;
+        height: 100%;
+    }
+
+    .form__input{
+        height:40px;
+    }
+
+    .form__input--textarea{
+        height: auto;
+    }
+    .heading-container{
+        grid-column: 4/6 ;
+        grid-row: 3/4;
+        margin: 0px;
+        align-self: start;
+        padding-top: 7px ;
+    }
+
+    .data-container{
+        grid-column: 4/6;
+        grid-row: 4/6;
+        align-self: center;
+        justify-self: start;
+        gap: 40px   ;
+    }
+
+}
+
+/*footer*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 112px;
+    background-color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer__icon-container{
+    display: flex;
+    gap: 25px;
+}
+
+.footer__icon{
+    width: 20px;
+}
+ .footer hr{
+    border-top: none;
+ }
+.footer__text{
+    color: #585858;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/*mq mobile and desktop footer*/
+@media screen and (min-width:760px) {
+    .footer{
+        display: flex;
+        height: 63px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px;
+
+    }
+    .footer__text{
+        order: 1;
+    }
+
+    .footer__icon-container{
+        order: 2;
+    }
+
+    .footer hr{
+        display: none;
+    }
+    
+}
+
+.nosotros .main-section {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    background-image: url("../assets/img/ebanista-taller.jpeg");
+    background-size: cover;
+    background-position: center center;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    padding: 0px;
+}
+
+
+
+.nosotros .main-section__heading{
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    grid-row: 4/5;
+    grid-column: 2/3;
+    align-self: end;
+
+}
+
+.nosotros .main-section__link{
+    grid-row: 5/6;
+    grid-column: 2/3;
+}
+
+@media screen and (min-width: 576px){
+    /*banner mobile*/
+    .nosotros .main-section{
+        height: 500px;
+    }
+    .nosotros .main-section__heading{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    /*banner desktop*/
+    .nosotros .main-section{
+        height: 100vh;
+    }
+    .nosotros .main-section__heading{
+        font-size: 4.4rem;
+    }
+}
+
+/*section nosotros*/
+.nosotros .nosotros-section{
+    display: flex;
+    background-color: #EBE8E8;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    /* padding: 20px; */
+}
+
+.nosotros .title-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.nosotros .nosotros-section__h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 100%;
+    
+}
+
+.nosotros .nosotros-section__h3{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.nosotros .text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    padding: 0px 20px;
+
+    
+}
+
+@media screen and  (min-width: 576px){
+
+    .nosotros .title-container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .nosotros .nosotros-section {
+        height: 700px;
+    }
+    .nosotros .nosotros-section__h2{
+        font-size: 3rem;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .nosotros .nosotros-section__h3{
+        font-size: 2rem;
+    }
+
+    .nosotros .nosotros-section .text-container{
+        width: 500px;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and  (min-width: 1024px){
+
+    .nosotros .nosotros-section {
+        height: 750px;
+    }
+    .nosotros .nosotros-section__h2{
+        font-size: 4.4rem;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .nosotros .nosotros-section__h3{
+        font-size: 3rem;
+    }
+
+    .nosotros .nosotros-section .text-container{
+        width: 500px;
+        font-size: 1.5rem;
+    }
+}
+   
+   
+
+.nosotros-data{
+    display: flex;
+    height: 266px;
+    background-color: #D9D9D9;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+@media screen and (min-width: 576px){
+    .nosotros-data{
+        display: flex;
+        flex-direction: row ;
+        height: 150px;
+    }
+
+    .nosotros-data h2{
+        font-size: 3rem;
+    }
+
+    .nosotros-data p{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .nosotros-data{
+        display: flex;
+        flex-direction: row ;
+        height: 210px;
+    }
+
+    .nosotros-data h2{
+        font-size: 4rem;
+    }
+
+    .nosotros-data p{
+        font-size: 3rem;
+    }
+}
+
+.galeria .main-section {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    background-image: url("../assets/img/mesa-ratona-esquina.jpg");
+    background-size: cover;
+    background-position: center center;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    padding: 0px;
+}
+
+.galeria .galeria-section{
+    display: flex;
+    height: 700px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.galeria .main-section__heading{
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    grid-row: 4/5;
+    grid-column: 2/3;
+    
+}
+
+.galeria .title-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.galeria .title-container h3{
+    font-weight: 400;
+}
+
+.galeria-container {
+    display: grid;
+    width: 300px;
+    height: auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,100px) ;
+    gap: 10px;
+    margin-bottom: 40px;
+
+}
+
+.galeria .galeria-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    
+} 
+
+.contacto-main-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 510px;
+    
+}
+
+.contacto-presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 30px;
+    width: 260px;
+    background-image: url(../assets/img/fondo-contacto.png);
+    background-size: cover;
+}
+
+.contacto .texto-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+
+.contacto .texto-container p{
+    width: 80%;
+    
+}
+
+.contacto .form{
+    width: 260px;
+}
+
+.contacto .form__fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    border: none;
+    height: 250px;
+}
+
+.contacto .form__input{
+    height: 32px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #F1F1F1;
+}
+
+.contacto .form__input--textarea{
+    height: auto;
+}
+
+.contacto .contacto-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto .contacto-container{
+    height: 487px;
+    background-color: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.contacto .cards-container{
+    display: grid;
+    width: 260px;
+    height: 400px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto .contacto-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    width: 115px;
+    height: 115px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.contacto-card .card-text-container{
+    width: 80%;
+    overflow-wrap: break-word;
+    /* gap: 5px;
+    margin: 5px; */
+    
+}
+
+.contacto-card .card-text-container h2 {
+    font-size: 1rem;
+}
+
+.contacto-card .card-text-container p {
+    font-size: 1rem;
+}
+
+.contacto-ubicacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+}
+
+.ubicacion-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+    height: 350px;
+
+}
+
+.ubicacion-text-container h2{
+    font-size: 2rem;
+}
+
+.ubicacion-text-container p{
+    font-size: 1.5rem;
+}
+
+.ubicacion-text-container img{
+    height: 176px;
+    width: 265px;
+}
+
+.testimonios .main-section {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    background-image: url("../assets/img/mesa-de-luz.jpg");
+    background-size: cover;
+    background-position: center center;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    padding: 0px;
+}
+
+
+
+.testimonios .main-section__heading{
+    color: white;
+    font-weight: 600;
+    font-size: 30px;
+    grid-row: 4/5;
+    grid-column: 2/3;
+    align-self: end;
+
+}
+
+.testimonios .main-section__link{
+    grid-row: 5/6;
+    grid-column: 2/3;
+}
+
+.testimonios .testimonios-section{
+    display: flex;
+    flex-direction: column;
+    height: 570px;
+    justify-content: space-evenly;
+}
+
+
+
+.testimonios .title-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+}
+.testimonios .testimonios-section__h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 100%;
+    
+}
+
+.testimonios .testimonios-section__h3{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.testimonios .cards-container{
+    display: grid;
+    height: 420px;
+    width: 280px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(12,1fr);
+    gap: 20px;
+    
+}
+
+.testimonios .card-1{
+    width: 100%;
+    height: 100%;
+    grid-row: 1/7;
+    grid-column: 1/2;
+    background-color: #E1DEDE;
+    border-radius: 20px;
+    overflow: hidden; 
+}
+
+.testimonios .card-1 img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.testimonios .card-1 div{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px 0px 10px;
+    gap: 10px;
+}
+
+.testimonios .card-1 .firma{
+    align-self: end;
+    color: #BD830D;
+    font-weight: 700;
+}
+
+.testimonios .card-2{
+    width: 100%;
+    height: 100%;
+    grid-row: 7/9;
+    grid-column: 1/2;
+    background-color: #E1DEDE;
+    border-radius: 20px;
+   
+
+}
+
+.testimonios .card-2 div{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px 0px 10px;
+    gap: 5px;
+    
+}
+
+.testimonios .card-2 .firma{
+    align-self: end;
+    color: #BD830D;
+    font-weight: 700;
+}
+
+.testimonios .card-3{
+    width: 100%;
+    height: 100%;
+    grid-row: 9/11;
+    grid-column: 1/2;
+    background-color: #E1DEDE;
+    border-radius: 20px;
+}
+
+.testimonios .card-3 div{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px 0px 10px;
+    gap: 5px;
+    
+}
+
+.testimonios .card-3 .firma{
+    align-self: end;
+    color: #BD830D;
+    font-weight: 700;
+}
+
+.testimonios .card-4{
+    width: 100%;
+    height: 100%;
+    grid-row: 11/13;
+    grid-column: 1/2;
+    background-color: #E1DEDE;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+.testimonios .card-4 div{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px 0px 10px;
+    gap: 5px;
+    
+}
+
+.testimonios .card-4 .firma{
+    align-self: end;
+    color: #BD830D;
+    font-weight: 700;
+}
+
+.testimonios .card-5{
+    width: 100%;
+    height: 100%;
+    grid-row: 1/3;
+    grid-column: 2/3;
+    background-color: #E1DEDE;
+    border-radius: 20px;
+}
+
+.testimonios .card-5 div{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px 0px 10px;
+    gap: 5px;
+}
+
+.testimonios .card-5 .firma{
+    align-self: end;
+    color: #BD830D;
+    font-weight: 700;
+}
+
+.testimonios .card-6{
+    width: 100%;
+    height: 100%;
+    grid-row: 3/9;
+    grid-column: 2/3;
+    background-color: #E1DEDE;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.testimonios .card-6 img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.testimonios .card-6 div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px 5px 10px;
+    gap: 5px;
+}
+
+.testimonios .card-6 .firma{
+    align-self: end;
+    color: #BD830D;
+    font-weight: 700;
+}
+
+.testimonios .card-7{
+    width: 100%;
+    height: 100%;
+    grid-row: 9/11;
+    grid-column: 2/3;
+    background-color: #E1DEDE;
+    border-radius: 20px;
+}
+
+.testimonios .card-7 div{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px 0px 10px;
+    gap: 5px;
+    
+}
+
+.testimonios .card-7 .firma{
+    align-self: end;
+    color: #BD830D;
+    font-weight: 700;
+}
+.testimonios .card-8{
+    width: 100%;
+    height: 100%;
+    grid-row: 11/13;
+    grid-column: 2/3;
+    background-color: #E1DEDE;
+    border-radius: 20px;
+}
+
+.testimonios .card-8  div{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px 0px 10px;
+    gap: 5px;
+    
+}
+
+.testimonios .card-8 .firma{
+    align-self: end;
+    color: #BD830D;
+    font-weight: 700;
+}

@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baobab Wood & Deco</title>
+    <link rel="icon" href="./assets/img/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body class="home">
+        <header class="nav-wrapper">
+            <nav>
+                <a href=""><img src="./assets/img/logo.png" alt=""></a>
+                <input type="checkbox" id="toggle">
+                <label for="toggle"><i class="material-icons">menu</i></label>
+                <div class="menu">
+                    <ul>
+                        <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                        <li><a href="./pages/galeria.html">Galeria</a></li>
+                        <li><a href="./pages/testimonios.html">Testimonios</a></li>
+                        <li><a href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+    
+        </header>
+    <main>
+        <section class="main-section">
+                <h2 class="main-section__heading">Baobab Wood & Deco</h2>
+                <a href="#nosotros-section" class="main-section__link"><img src="./assets/img/flecha-abajo.png" alt=""></a>
+        </section>
+        <section class="nosotros-section" id="nosotros-section">
+            <h2>Somos Baobab Wood & Deco</h2>
+            <h3>Muebles artesanales a medida</h3>
+            <div class="card__ebanista">
+                <img src="./assets/img/ebanista-redondo.png" alt="" >
+                <div>
+                    <p class="desc-ebanista__texto">Desde 2015, somos un grupo comprometido con la excelencia
+                        y el compromiso. Nuestros muebles se destacan por sus materiales
+                        de primera calidad y sus diseños auténticos.</p>
+                    <hr>
+                    <p class="desc-ebanista__firma"><span>Santiago Gallegos Luque</span><br> Ebanista</p>
+                </div>
+            </div>
+            <a href="./pages/nosotros.html" class="desc-ebanista__link">Nosotros ></a>
+        </section>
+        <section class="galeria-section">
+            <a href="./pages/galeria.html">Galería ></a>
+        </section>
+        <section class="testimonios-section">
+            <!-- contenedor de todas las cards -->
+            <div class="cards-container">
+                <!-- contendor una carta y flechas -->
+                <div class="card-container">
+                    <a href="./pages/testimonios.html"><img src="./assets/img/flecha-para-izq.png" alt="" class="card-container__flechaizq"></a>
+                    <div class="testimonios-card">
+                        <p class="testimonios-card__texto">"Profesional, atento y muy amable. Muy recomendable.”</p>
+                        <a href="./pages/testimonios.html" class="testimonios-card__link">Leer más ></a>
+                        <h3 class="testimonios-card__firma">Lucrecia Rivas</h3>
+                    </div>
+                    <a href="./pages/testimonios.html"><img src="./assets/img/flecha-para-der.png" alt="" class="card-container__flechader"></a>
+                </div> 
+                <div class="card-container--2">
+                    <div class="testimonios-card">
+                        <p class="testimonios-card__texto">"Santiago me hizo una de las 
+                            mesas más lindas y elegantes que tuve. La calidad de fabricación es superior.”</p>
+                        <a href="./pages/testimonios.html" class="testimonios-card__link">Leer más ></a>
+                        <h3 class="testimonios-card__firma">Marcelo Gardiner</h3>
+                    </div>
+                    <a href="./pages/testimonios.html"><img src="./assets/img/flecha-para-der.png" alt="" class="card-container--2__flechader"></a>
+                </div> 
+                <div class="card-container--3">
+                    <div class="testimonios-card">
+                        <p class="testimonios-card__texto">"Tener un mueble a medida 
+                            no es común, pero vale la pena. Ahora ya no quiero volver a comprar una mesa de melamina.”</p>
+                        <a href="./pages/testimonios.html" class="testimonios-card__link">Leer más ></a>
+                        <h3 class="testimonios-card__firma">Pablo Páramo</h3>
+                    </div>
+                    <a href="./pages/testimonios.html"><img src="./assets/img/flecha-para-der.png" alt="" class="card-container--3__flechader"></a>
+                </div>
+            </div>       
+            <a href="./pages/testimonios.html" class="testimonios-section__link">Testimonios ></a>
+        </section>
+        <section class="contacto-section">
+            <!-- <div class="grid-container"> -->
+                <div class="heading-container">
+                    <h3 class="heading-container__h3">¡Hablá con nosotros!</h3>
+                    <hr>
+                </div>
+                <div class="form">
+                    <form action="">
+                        <fieldset>
+                            <input type="text" id="nombre" placeholder="Nombre" class="form__input">
+                            <input type="text" id="email" placeholder="Email" class="form__input">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="¿Con qué te podemos ayudar?" class="form__input form__input--textarea"></textarea>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="data-container">
+                    <div class="data">
+                        <img src="./assets/img/mail.png" alt="" class="data__img">
+                        <p class="data__text">&nbsp&nbspsantiagogallegos@gmail.com</p>
+                    </div>
+                    <div class="data">
+                        <img src="./assets/img/location-icon.png" alt="" class="data__img">
+                        <p class="data__text">&nbsp&nbspSan Fernando, Buenos Aires, Argentina</p>
+                    </div>
+                    <div class="data">
+                        <img src="./assets/img/whatsapp-icon.png" alt="" class="data__img--size">
+                        <p class="data__text">+54 9 11 1234 5667</p>
+                    </div>
+                </div>  
+            <!-- </div>     -->
+        </section>
+    </main>
+    <footer>
+        <div class="footer__icon-container">
+            <a href="https://www.instagram.com/" target="_blank""><img src="./assets/img/instagram-icon.png" alt="""  class="footer__icon"></a>
+            <a href="https://www.facebook.com/" target="_blank""><img src="./assets/img/facebook-icon.png" alt=""  class="footer__icon"></a>
+            <a href="https://ar.pinterest.com/" target="_blank""><img src="./assets/img/pinterest-icon.png" alt=""  class="footer__icon"></a>
+        </div>
+        <hr>
+        <div>
+            <p>@ 2022 Baobab Wood & Deco. Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+
+</html>
