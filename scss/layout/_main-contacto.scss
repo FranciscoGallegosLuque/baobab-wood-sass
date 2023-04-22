@@ -13,17 +13,37 @@
             width: 260px;
             background-image: url(../assets/img/fondo-contacto.png);
             background-size: cover;
+            @include tablet{
+                width: 600px;
+                flex-direction: row;
+                gap: 5px;
+            @include desktop{
+                width: 800px;
+            }
+            }
             .texto-container{
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
                 font-size: 1.5rem;
+                @include desktop{
+                    font-size: 2rem;
+                }
                 p{
                     width: 80%;
+                }
+                @include tablet{
+                    width: 200px;
+                }
+                @include desktop{
+                    width: 400px;
                 }
             }
             .form{
                 width: 260px;
+                @include desktop{
+                    width: 300px;
+                }
                 .form__fieldset{
                     display: flex;
                     flex-direction: column;
@@ -53,6 +73,12 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        @include tablet{
+            height: 600px;
+        }
+        @include desktop{
+            height: 800px;
+        }
         .cards-container{
             display: grid;
             width: 260px;
@@ -61,6 +87,18 @@
             grid-template-rows: 1fr 1fr 1fr;
             align-items: center;
             justify-content: center;
+            @include tablet{
+                width: 600px;
+                height: 400px;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+            @include desktop{
+                width: 900px;
+                height: 600px;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
             .contacto-card{
                 display: flex;
                 flex-direction: column;
@@ -72,14 +110,34 @@
                 height: 115px;
                 background-color: white;
                 border-radius: 10px;
+                @include tablet{
+                    width: 180px;
+                    height: 180px;
+                    gap: 10px;
+                }
+                @include desktop{
+                    width: 250px;
+                    height: 250px;
+                    gap: 5px;
+                }
                 .card-text-container{
                     width: 80%;
                     overflow-wrap: break-word;
+                    @include tablet{    
+                        width: 90%;
+                        gap: 20px;
+                    }
                     h2{
                         font-size: 1rem;
+                        @include tablet{
+                            font-size: 1.5rem;
+                        }
                     }
                     p{
                         font-size: 1rem;
+                        @include tablet{
+                            font-size: 1.5rem;
+                        }
                     }
                 }
             }
@@ -91,21 +149,40 @@
         align-items: center;
         justify-content: center;
         height: 450px;
+        @include desktop{
+            height: 600px;
+            
+        }
+        
         .ubicacion-text-container{
             display: flex;
             flex-direction: column;
             align-items: left;
             justify-content: space-evenly;
             height: 350px;
+            @include desktop{
+                gap: 25px;
+            }
+
             h2{
                 font-size: 2rem;
+                @include desktop{
+                    font-size: 3rem;
+                }
             }
             p{
                 font-size: 1.5rem;
+                @include desktop{
+                    font-size: 2rem;
+                }
             }
             img{
                 height: 176px;
                 width: 265px;
+                @include desktop{
+                    width: 400px;
+                    height: 300px;
+                }
             }
         }
     }
